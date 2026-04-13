@@ -399,7 +399,7 @@ export default function InvestPage() {
             <a href="sms:+15129440781?&body=Pembrook%20investment" className="font-medium hover:opacity-80" style={{ color: GOLD }}>
               512-944-0781
             </a>{" "}
-            to review the property details, loan documentation, and finalize terms.
+            to learn more info and property details.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
