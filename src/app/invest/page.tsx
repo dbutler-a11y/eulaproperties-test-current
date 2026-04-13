@@ -395,16 +395,29 @@ export default function InvestPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-light mb-4">Ready to Discuss?</h2>
           <p className="text-gray-500 mb-8 max-w-lg mx-auto">
-            Schedule a call to review the property details, loan documentation, and finalize terms.
+            Text <strong className="text-gray-900">&ldquo;Pembrook investment&rdquo;</strong> to{" "}
+            <a href="sms:+15129440781?&body=Pembrook%20investment" className="font-medium hover:opacity-80" style={{ color: GOLD }}>
+              512-944-0781
+            </a>{" "}
+            to review the property details, loan documentation, and finalize terms.
           </p>
-          <a
-            href="mailto:dbutler@eulaproperties.com?subject=Investment%20Inquiry%20-%20Pembrook%20Note"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg text-white text-sm font-medium transition-opacity hover:opacity-90"
-            style={{ backgroundColor: GOLD }}
-          >
-            Schedule a Call
-            <ArrowRight className="w-4 h-4" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href="sms:+15129440781?&body=Pembrook%20investment"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg text-white text-sm font-medium transition-opacity hover:opacity-90"
+              style={{ backgroundColor: GOLD }}
+            >
+              Text &ldquo;Pembrook investment&rdquo;
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="mailto:dbutler@eulaproperties.com?subject=Pembrook%20investment"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg border text-sm font-medium hover:bg-gray-50 transition-colors"
+              style={{ borderColor: GOLD, color: GOLD }}
+            >
+              Or Email
+            </a>
+          </div>
         </div>
       </section>
 
