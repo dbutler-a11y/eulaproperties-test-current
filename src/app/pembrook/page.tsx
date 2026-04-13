@@ -31,7 +31,7 @@ const propertyUnits = [
     beds: 3,
     baths: 4,
     status: "Renovation In Progress",
-    appraisedValue: "$440,000",
+    appraisedValue: "$395,000",
   },
   {
     address: "9134 Pembrook St",
@@ -40,7 +40,7 @@ const propertyUnits = [
     beds: 3,
     baths: 4,
     status: "Renovation In Progress",
-    appraisedValue: "$315,000",
+    appraisedValue: "$352,500",
   },
   {
     address: "9136 Pembrook St",
@@ -49,7 +49,7 @@ const propertyUnits = [
     beds: 3,
     baths: 4,
     status: "Renovation In Progress",
-    appraisedValue: "$280,000",
+    appraisedValue: "$352,500",
   },
 ];
 
@@ -250,7 +250,7 @@ export default function PembrookInvestorPage() {
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
                 <div className="text-3xl font-bold text-emerald-400 mb-2">
-                  $1.035M
+                  $1.10M
                 </div>
                 <div className="text-slate-400 text-sm">
                   Combined Appraised Value
