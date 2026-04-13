@@ -256,9 +256,17 @@ export default function InvestPage() {
       <section className="py-16 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-2xl font-light mb-3">Projected Exit — Per Unit</h2>
-          <p className="text-sm text-gray-500 mb-8">
+          <p className="text-sm text-gray-500 mb-4">
             Three separate units, three separate sales. Each can be sold or refinanced independently — investors are paid back from the first proceeds.
           </p>
+          <div className="flex items-start gap-3 p-4 mb-8 rounded-xl border" style={{ borderColor: GOLD, backgroundColor: "#FBF8F3" }}>
+            <div className="flex-shrink-0 w-2 h-2 rounded-full mt-1.5" style={{ backgroundColor: GOLD }} />
+            <p className="text-sm text-gray-700">
+              <strong>Buyer interest update:</strong> We have been receiving inquiries from buyers
+              interested in purchasing the entire 3-unit compound as a single transaction —
+              which would accelerate the exit and retire the investor note in one closing.
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             {[
