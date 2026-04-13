@@ -132,6 +132,7 @@ export default function Home() {
           <a href="#nile" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">NILE Chain</a>
           <a href="#vision" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Agent Economy</a>
           <Link href="/pembrook" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Pembrook</Link>
+          <Link href="/invest" className="text-sm font-medium" style={{ color: GOLD }}>Invest</Link>
           <a href="#investors" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Investors</a>
           <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">About</a>
         </div>

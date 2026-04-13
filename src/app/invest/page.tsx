@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Shield, Clock, TrendingUp, Building2, ChevronRight } from "lucide-react";
+import { ArrowRight, Shield, Clock, TrendingUp, Building2, ChevronRight, FileText, Download } from "lucide-react";
 
 const GOLD = "#B8976A";
 
@@ -248,6 +248,106 @@ export default function InvestPage() {
           <p className="mt-6 text-sm text-gray-400">
             After the initial $50K is deployed, the remaining $150K in construction loan draws
             funds the rest of the rehab. No additional capital needed from investors.
+          </p>
+        </div>
+      </section>
+
+      {/* Projected Sales / Exit Math */}
+      <section className="py-16 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-2xl font-light mb-3">Projected Exit — Per Unit</h2>
+          <p className="text-sm text-gray-500 mb-8">
+            Three separate units, three separate sales. Each can be sold or refinanced independently — investors are paid back from the first proceeds.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            {[
+              { unit: "9132 Pembrook St", type: "Primary Residence", sqft: "1,800", price: "$395,000" },
+              { unit: "9134 Pembrook St", type: "Accessory Dwelling Unit", sqft: "2,796", price: "$352,500" },
+              { unit: "9136 Pembrook St", type: "Accessory Dwelling Unit", sqft: "2,796", price: "$352,500" },
+            ].map((u) => (
+              <div key={u.unit} className="border border-gray-200 rounded-2xl p-6">
+                <div className="text-xs text-gray-400 uppercase tracking-widest mb-2">{u.type}</div>
+                <div className="text-base font-medium text-gray-900 mb-1">{u.unit}</div>
+                <div className="text-xs text-gray-400 mb-4">{u.sqft} sq ft</div>
+                <div className="text-2xl font-light" style={{ color: GOLD }}>{u.price}</div>
+                <div className="text-xs text-gray-400 mt-1">Projected sales price</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gray-50 rounded-2xl p-6">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500">Total Projected Sales</span>
+                <span className="font-medium" style={{ color: GOLD }}>$1,100,000</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500">Senior Debt Payoff</span>
+                <span className="font-medium">~$515,000</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500">Investor Principal ($50K Note)</span>
+                <span className="font-medium">$50,000</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500">Investor Interest (3-mo target)</span>
+                <span className="font-medium">~$6,250</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500">Closing &amp; Carrying Costs (est.)</span>
+                <span className="font-medium">~$80,000</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-gray-100">
+                <span className="text-gray-500 font-medium">Sponsor Equity / Cushion</span>
+                <span className="font-medium text-emerald-600">~$448,750</span>
+              </div>
+            </div>
+            <p className="text-xs text-gray-400 mt-4">
+              The investor note ($50K + interest) is paid from the <strong>first</strong> sale proceeds — not the last.
+              Even if only one unit closes, there is more than enough cash flow to fully retire the note.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Documents & Due Diligence */}
+      <section className="py-16 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-2xl font-light mb-3">Documents &amp; Due Diligence</h2>
+          <p className="text-sm text-gray-500 mb-8">
+            Independent appraisals and city-approved construction plans. Click to download.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { title: "Approved Construction Plans", desc: "City of Houston permitted plans for all 3 units", file: "/pembrook/documents/approved-plans.pdf" },
+              { title: "9132 Pembrook — Appraisal Report", desc: "Primary residence, 1,800 sq ft", file: "/pembrook/documents/appraisal-9132.pdf" },
+              { title: "9134 Pembrook — Appraisal Report", desc: "ADU, 2,796 sq ft", file: "/pembrook/documents/appraisal-9134.pdf" },
+              { title: "9136 Pembrook — Appraisal Report", desc: "ADU, 2,796 sq ft", file: "/pembrook/documents/appraisal-9136.pdf" },
+            ].map((doc) => (
+              <a
+                key={doc.file}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-4 p-5 border border-gray-200 rounded-2xl hover:border-gray-300 hover:bg-gray-50 transition-colors group"
+              >
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center group-hover:bg-white transition-colors">
+                  <FileText className="w-5 h-5" style={{ color: GOLD }} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-medium text-gray-900 text-sm mb-0.5">{doc.title}</div>
+                  <div className="text-xs text-gray-500">{doc.desc}</div>
+                </div>
+                <Download className="w-4 h-4 text-gray-300 group-hover:text-gray-500 flex-shrink-0 mt-1" />
+              </a>
+            ))}
+          </div>
+
+          <p className="text-xs text-gray-400 mt-6">
+            Additional documentation available on request: title commitment, builder&rsquo;s risk insurance certificate,
+            CenterStreet construction loan agreement, and contractor bids.
           </p>
         </div>
       </section>
