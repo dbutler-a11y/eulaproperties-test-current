@@ -162,8 +162,11 @@ export default function LegacyHome() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">Our Mission</h2>
           <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-            To bridge the gap between artificial intelligence innovation and practical business applications,
-            while creating sustainable value through strategic real estate investments.
+            Our vision is to build a self-sustaining economic ecosystem where education fuels innovation,
+            innovation creates opportunity, and opportunity generates wealth. We are creating an environment
+            where participants don&apos;t just acquire knowledge&mdash;they apply it to build businesses, create
+            jobs, generate income, and become contributors to an economy that continuously grows and reinvests
+            in its own success.
           </p>
           <div id="about" className="mt-16">
             <h3 className="text-2xl font-semibold mb-6 text-emerald-400">About Eula Properties</h3>
