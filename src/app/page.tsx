@@ -411,6 +411,14 @@ export default function Home() {
       {/* About / Mission */}
       <section id="about" className="py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-light text-gray-900 mb-6">Our Mission</h2>
+          <p className="text-xl font-light text-gray-700 leading-relaxed mb-16">
+            Our vision is to build a self-sustaining economic ecosystem where education fuels innovation,
+            innovation creates opportunity, and opportunity generates wealth. We are creating an environment
+            where participants don&apos;t just acquire knowledge&mdash;they apply it to build businesses, create
+            jobs, generate income, and become contributors to an economy that continuously grows and reinvests
+            in its own success.
+          </p>
           <h2 className="text-4xl font-light text-gray-900 mb-6">About EULA Properties</h2>
           <p className="text-gray-500 leading-relaxed mb-6">
             Based in Houston, Texas, EULA Properties operates as a blockchain-native holding company
