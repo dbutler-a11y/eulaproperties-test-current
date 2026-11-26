@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eula Properties | Real Estate Investment",
-  description: "Eula Properties LLC - Real Estate Investment and Development in Houston, Texas",
+  title: "Eula Labs | Applied AI & Real Assets — Houston, TX",
+  description: "Eula Labs builds AI agents and automation that answer leads, produce content and run back-office work for real businesses. A Eula Properties LLC company, Houston, Texas.",
 };
 
 export default function RootLayout({
