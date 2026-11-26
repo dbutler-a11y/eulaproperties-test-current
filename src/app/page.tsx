@@ -128,7 +128,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-light text-gray-900 mb-3">Services</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">Clear scopes, published prices. Billed by invoice or card.</p>
+            <p className="text-gray-500 max-w-2xl mx-auto">Clear scopes, published prices. Billed by invoice or card. Not satisfied? <a href="/policies#refunds" className="underline">We refund you.</a></p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((s) => (
@@ -197,6 +197,11 @@ export default function Home() {
           </a>
           <div className="mt-12 pt-8 border-t border-gray-100 text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Eula Properties LLC. Houston, Texas.</p>
+            <div className="mt-3 flex justify-center gap-6 text-xs">
+              <a href="/policies#refunds" className="hover:text-gray-600">Refund policy</a>
+              <a href="/policies#terms" className="hover:text-gray-600">Terms</a>
+              <a href="/policies#privacy" className="hover:text-gray-600">Privacy</a>
+            </div>
           </div>
         </div>
       </footer>
